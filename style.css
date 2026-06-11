@@ -1,0 +1,977 @@
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Arial', sans-serif; 
+    background-color: #ffffff;
+}
+
+  
+.main-header {
+    background-color: #b32467; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-area h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: serif;
+    letter-spacing: 2px;
+}
+
+.logo-area .slogan {
+    margin: 5px 0 0 0;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+
+.nav-menu {
+    display: flex;
+    gap: 15px;
+    z-index: 2;
+
+}
+
+.nav-menu a {
+    background-color: #ffccd8; 
+    color: #b32467;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #ffa6be;
+}
+
+
+.banner-photo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40%; /* Ocupa el espacio derecho */
+}
+
+.banner-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7; /* Suaviza la imagen con el fondo */
+}
+
+.section-title {
+    text-align: center;
+    color: #b32467;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 25px 0;
+    font-size: 1.1rem;
+}
+
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.product-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.badge {
+    background-color: #ffccd8;
+    color: #b32467;
+    width: 100%;
+    padding: 6px 0;
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+
+.image-box {
+    width: 100%;
+    height: 150px; /* Ajusta según el tamaño
+ de tus fotos de ropa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+.model-box {
+    height: 220px; 
+}
+.model-box img {
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+ {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #4a1525;     border-radius: 8px;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.titulo-seccion h1 {
+    font-size: 3rem;
+    font-family: 'Playfair Display', Georgia, serif;    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.cuadrícula-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;    gap: 20px;
+ }
+
+
+.columna-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.bloque-texto {
+    background-color: #722f42;     padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+
+.bloque-texto h2, .bloque-texto h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.bloque-texto h3 {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.bloque-texto p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f0e6e8;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+
+.historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+    .cuadrícula-nosotros {
+        grid-template-columns: 1fr;
+    }
+    .titulo-seccion h1 {
+        font-size: 2.2rem;
+    }
+}
+/* ==========================================================
+   SECCIÓN: MODA AMERICANA (DISEÑO FIEL AL BOCETO DE CANVA)
+   ========================================================== */
+
+
+.contenedor-seccion-continente {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.banner-continente {
+    background-color: #a44262;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+.banner-continente h1 {
+    font-size: 2.4rem;
+    font-weight: 300;
+    letter-spacing: 4px;
+    margin: 0;
+}
+.pizarra-diseno-oscura {
+    background-color: #16161a; 
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr; 
+    gap: 40px;
+    align-items: start;
+}
+
+.columna-catalogo-canva {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.pestana-categorias-boceto {
+    background-color: #a44262;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: fit-content;
+}
+
+.espacio-imagen-catalogo {
+    width: 100%;
+    height: 580px; 
+    overflow: hidden;
+}
+
+.imagen-catalogo-completa {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    background-color: #ffffff;
+}
+
+
+.columna-modelo-boceto {
+    width: 100%;
+}
+
+.contenedor-analisis-outfit {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.foto-modelo-analisis {
+    width: 100%;
+    height: 580px; 
+    overflow: hidden;
+}
+
+.imagen-modelo-real {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.etiquetas-outfit {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.etiqueta-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #a44262; 
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 25px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.etiqueta-item .flecha {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.etiqueta-item p {
+    margin: 0;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+
+@media (max-width: 900px) {
+    .pizarra-diseno-oscura {
+        grid-template-columns: 1fr;
+    }
+    .espacio-imagen-catalogo, .foto-modelo-analisis {
+        height: 450px;
+    }
+}
+/* ==========================================================
+   SECCIÓN: MODA ASIÁTICA (DISEÑO FIEL AL BOCETO DE CANVA)
+   ========================================================== */
+
+/* Contenedor exterior con fondo totalmente blanco */
+.contenedor-seccion-continente {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* Obliga a que el fondo exterior sea blanco */
+}
+
+/* Banner superior rosa/vino */
+.banner-continente {
+    background-color: #a44262; /* Tono rosa/vino de tu marca */
+    color: #ffffff; /* Letras blancas */
+    text-align: center;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+.banner-continente h1 {
+    font-size: 2.4rem;
+    font-weight: 300;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+/* Fondo oscuro central del boceto de Canva */
+.pizarra-diseno-oscura {
+    background-color: #16161a; /* Cuadro negro del lienzo de Canva */
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* --- COLUMNA IZQUIERDA (CATÁLOGO) --- */
+.columna-catalogo-canva {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Barra de categorías superior */
+.pestana-categorias-boceto {
+    background-color: #a44262;
+    color: #ffffff; /* Texto blanco */
+    padding: 10px 15px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: fit-content;
+}
+
+.espacio-imagen-catalogo {
+    width: 100%;
+    height: 580px;
+    overflow: hidden;
+}
+
+.imagen-catalogo-completa {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta la imagen sin estirarla feo */
+    background-color: #ffffff; /* Mantiene el fondo de la imagen limpio */
+}
+
+/* --- COLUMNA DERECHA (MODELO) --- */
+.foto-modelo-analisis {
+    width: 100%;
+    height: 580px; /* Misma altura fija para simetría ideal */
+    overflow: hidden;
+}
+
+.imagen-modelo-real {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta y ajusta a la modelo de forma estilizada */
+    display: block;
+}
+
+.etiquetas-outfit {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+/* Botones / Óvalos Rosas de las descripciones */
+.etiqueta-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #a44262; /* Fondo rosa de tus cuadros */
+    color: #ffffff; /* Tipografía totalmente blanca */
+    padding: 12px 18px;
+    border-radius: 25px; /* Hace los recuadros ovalados como en Canva */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.etiqueta-item .flecha {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.etiqueta-item p {
+    margin: 0;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: #ffffff; /* Asegura texto blanco */
+}
+
+/* Ajuste para Celulares */
+@media (max-width: 900px) {
+    .pizarra-diseno-oscura {
+        grid-template-columns: 1fr;
+    }
+    .espacio-imagen-catalogo, .foto-modelo-analisis {
+        height: 450px;
+    }
+}
+/* Asegura que el fondo exterior sea totalmente blanco */
+.contenedor-seccion-continente {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+}
+
+/* Asegura que el contenedor de Canva sea oscuro */
+.pizarra-diseno-oscura {
+    background-color: #16161a;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Óvalos de las descripciones con letras 100% blancas */
+.etiqueta-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #a44262; /* Rosa/Vino de ZYRA */
+    color: #ffffff; 
+    padding: 12px 18px;
+    border-radius: 25px; /* Forma de óvalo */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.etiqueta-item p, 
+.etiqueta-item .flecha {
+    color: #ffffff !important; /* Fuerza a que todo sea blanco */
+    margin: 0;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+/* ==========================================================
+   SECCIÓN: MODA EUROPEA (COMPLEMENTO DE ESTILOS)
+   ========================================================== */
+
+/* Asegura que el fondo exterior de esta página sea totalmente blanco */
+.contenedor-seccion-continente {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* Fondo exterior blanco */
+}
+
+/* Lienzo oscuro central (Simulando el fondo negro de tu Canva) */
+.pizarra-diseno-oscura {
+    background-color: #16161a; /* El cuadro oscuro donde resalta todo */
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Control para que la imagen única del catálogo izquierdo no se deforme */
+.espacio-imagen-catalogo {
+    width: 100%;
+    height: 580px; /* Altura idéntica para mantener simetría */
+    overflow: hidden;
+}
+
+.imagen-catalogo-completa {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta la cuadrícula de Canva perfectamente */
+    background-color: #ffffff;
+}
+
+/* Control para la foto de la modelo derecha */
+.foto-modelo-analisis {
+    width: 100%;
+    height: 580px; /* Misma altura para que las dos columnas queden igualitas */
+    overflow: hidden;
+}
+
+.imagen-modelo-real {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Estiliza a la modelo ocupando el cuadro completo */
+    display: block;
+}
+
+/* Globos de texto/Óvalos rosas idénticos a los de tu Canva */
+.etiqueta-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #a44262; /* Tono rosa/vino de ZYRA */
+    padding: 12px 18px;
+    border-radius: 25px; /* Esquinas súper redondeadas para formar el óvalo */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* TIPOGRAFÍA TOTALMENTE BLANCA DENTRO DE LOS RECUADROS */
+.etiqueta-item p,
+.etiqueta-item .flecha {
+    color: #ffffff !important; /* Fuerza al navegador a poner las letras blancas */
+    margin: 0;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+/* Diseño Adaptable para Celulares */
+@media (max-width: 900px) {
+    .pizarra-diseno-oscura {
+        grid-template-columns: 1fr; /* Se hace una sola columna en pantallas chicas */
+    }
+    .espacio-imagen-catalogo, .foto-modelo-analisis {
+        height: 450px; /* Se achica un poco el alto para que no se vea eterno en cel */
+    }
+}
+/* ==========================================================
+   SECCIÓN: MODA OCEANÍA (FIX DE IMAGEN EN SU POSICIÓN REAL)
+   ========================================================== */
+
+/* Fondo general exterior en blanco */
+.contenedor-seccion-continente {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+}
+
+/* Caja negra central de Canva */
+.pizarra-diseno-oscura {
+    background-color: #16161a;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Pestaña superior horizontal rosa */
+.pestana-categorias-boceto {
+    background-color: #a44262;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+
+/* CONTENEDOR IZQUIERDO: Evita que la foto se aplaste */
+.espacio-imagen-catalogo {
+    width: 100%;
+    height: 580px; 
+    overflow: hidden;
+    background-color: #ffffff; /* Mantiene un fondo blanco limpio detrás si sobra espacio */
+}
+
+.imagen-catalogo-completa {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* ¡ESTO EVITA QUE SE VEA ACOSTADA O DEFORMADA! */
+}
+
+/* CONTENEDOR DERECHO: Modelo */
+.foto-modelo-analisis {
+    width: 100%;
+    height: 580px;
+    overflow: hidden;
+}
+
+.imagen-modelo-real {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Óvalos de texto de las descripciones */
+.etiquetas-outfit {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.etiqueta-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #a44262;
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.etiqueta-item p,
+.etiqueta-item .flecha {
+    color: #ffffff !important; /* Letras siempre blancas */
+    margin: 0;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+/* ==========================================================
+   SECCIÓN: NUEVO CATÁLOGO DE PRODUCTOS (MENU.HTML)
+   ========================================================== */
+
+/* Estilo destacado para el botón exclusivo de Tabla de Tallas */
+.btn-tallas {
+    background-color: #a44262 !important;
+    color: #ffffff !important;
+    border-radius: 4px;
+    padding: 6px 12px !important;
+}
+
+/* Grid del catálogo completo: separa en dos columnas tus bloques */
+.grid-catalogo-completo {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 30px !important;
+}
+
+.bloque-catalogo-lado {
+    display: flex;
+    flex-direction: column;
+    gap: 35px; /* Separación vertical entre cada accesorio */
+}
+
+/* Tarjetas individuales de cada bloque */
+.tarjeta-producto-catalogo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.imagen-catalogo-cuadro {
+    width: 100%;
+    height: 380px; /* Tamaño simétrico ideal para las cuadrículas */
+    overflow: hidden;
+    background-color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.imagen-catalogo-cuadro img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Botón comprar estilo boceto Canva */
+.btn-comprar-boceto {
+    background-color: #a44262;
+    color: #ffffff; /* Tipografía blanca */
+    border: none;
+    padding: 12px 30px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-comprar-boceto:hover {
+    background-color: #bd5378;
+    transform: scale(1.03);
+}
+
+/* ==========================================================
+   ESTILOS DE LAS VENTANAS MODALES INTERACTIVAS (PASARELA Y TALLAS)
+   ========================================================== */
+.ventana-modal-pago {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Oscurece el fondo */
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-modal-pago {
+    background-color: #ffffff;
+    color: #16161a;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 480px;
+    width: 90%;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.cerrar-modal {
+    position: absolute;
+    top: 15px; right: 20px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #888888;
+}
+
+.cerrar-modal:hover { color: #16161a; }
+
+.contenido-modal-pago h3 {
+    color: #a44262;
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+
+.opciones-pago-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.opcion-item-pago {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.opcion-item-pago:hover {
+    background-color: #f7eff2;
+    border-color: #a44262;
+}
+
+/* Diseño de la tabla de tallas */
+.tabla-tallas-estilo {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+.tabla-tallas-estilo th, .tabla-tallas-estilo td {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: center;
+}
+.tabla-tallas-estilo th {
+    background-color: #a44262;
+    color: white;
+}
+
+/* Ajuste móvil */
+@media (max-width: 800px) {
+    .grid-catalogo-completo {
+        grid-template-columns: 1fr !important;
+    }
+} /* --- ESTILOS GENERALES DE LA PÁGINA DE CONTACTO --- */
+body {
+    background-color: #f3eff2; /* Fondo grisáceo claro como el lienzo de Canva */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menú de navegación superior derecho */
+.encabezado-navegacion-contacto {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 50px;
+    background-color: #f3eff2;
+}
+
+.menu-derecha-contacto {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-nav-c {
+    background-color: #ffffff;
+    color: #4a4a4a;
+    text-decoration: none;
+    padding: 8px 24px;
+    border-radius: 20px 20px 0 0; /* Pestañas redondeadas superiores de tu boceto */
+    font-size: 0.95rem;
+    border: 1px solid #dcdad0;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Banner Principal Morado */
+.banner-principal-contacto {
+    background-color: #9e648a; /* Tono morado/rosa de tu maqueta */
+    color: #ffffff;
+    padding: 30px 60px;
+    margin: 0 40px;
+    border-radius: 4px;
+}
+
+.contenido-banner-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-zyra-c {
+    font-family: 'Times New Roman', serif;
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+.titulo-seccion-c {
+    font-family: 'Georgia', serif;
+    font-size: 2.8rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Contenedor de la información de abajo */
+.contenedor-bloques-contacto {
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Fila de los dos primeros cuadros */
+.fila-superior-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr; /* El de redes es ligeramente más ancho */
+    gap: 30px;
+}
+
+/* Estilo base para las cajas moradas */
+.bloque-morado-c {
+    background-color: #9e648a;
+    color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 4px;
+    min-height: 160px;
+}
+
+.subtitulo-icono-c {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.icono-telefono-c {
+    font-size: 1.8rem;
+}
+
+.bloque-morado-c h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.35rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+}
+
+.bloque-morado-c p {
+    margin: 8px 0;
+    font-size: 1.05rem;
+    line-height: 1.4;
+}
+
+.lista-redes-c {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-redes-c li {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+/* Bloque Inferior Grande (Atención al Cliente) */
+.bloque-ancho-contacto {
+    background-color: #9e648a;
+    color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.columna-atencion-titulo h3 {
+    font-size: 1.8rem;
+    font-family: 'Georgia', serif;
+    margin: 0 0 15px 0;
+    font-weight: normal;
+}
+
+.columna-atencion-titulo p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.columna-atencion-horarios {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.columna-atencion-horarios p {
+    margin: 2px 0;
+}

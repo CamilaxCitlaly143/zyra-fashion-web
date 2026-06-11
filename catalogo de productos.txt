@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZYRA FASHION - Catálogo de Productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="encabezado-navegacion">
+        <div class="logo">
+            <h2>ZYRA</h2>
+            <p>Moda sin fronteras</p>
+        </div>
+        <nav class="menu-navegacion">
+            <a href="index.html" class="btn-nav">Inicio</a>
+            <a href="" class="btn-nav activo">Menú</a>
+            <a href="nosotros.html" class="btn-nav">¿Quiénes somos?</a>
+            <a href="#tallas" class="btn-nav btn-tallas" onclick="abrirTallas()">Tabla de tallas</a>
+        </nav>
+    </header>
+
+    <main class="contenedor-seccion-continente">
+        
+        <div class="banner-continente">
+            <h1>CATÁLOGO DE ACCESORIOS GLOBALES</h1>
+        </div>
+
+        <div class="pizarra-diseno-oscura grid-catalogo-completo">
+            
+            <section class="bloque-catalogo-lado">
+                
+                <div class="tarjeta-producto-catalogo">
+                    <div class="pestana-categorias-boceto"><span>ACCESORIOS AMERICANOS</span></div>
+                    <div class="imagen-catalogo-cuadro">
+                        <img src="accesorios americana.jpg" alt="Accesorios Americanos">
+                    </div>
+                    <button class="btn-comprar-boceto" onclick="abrirPasarela('Accesorios Americanos')">COMPRAR</button>
+                </div>
+
+                <div class="tarjeta-producto-catalogo">
+                    <div class="pestana-categorias-boceto"><span>ACCESORIOS ASIÁTICOS</span></div>
+                    <div class="imagen-catalogo-cuadro">
+                        <img src="accesorios asiaticos.jpg" alt="Accesorios Asiáticos">
+                    </div>
+                    <button class="btn-comprar-boceto" onclick="abrirPasarela('Accesorios Asiáticos')">COMPRAR</button>
+                </div>
+
+                <div class="tarjeta-producto-catalogo">
+                    <div class="pestana-categorias-boceto"><span>ACCESORIOS EUROPEOS</span></div>
+                    <div class="imagen-catalogo-cuadro">
+                        <img src="accesorios europeos.jpg" alt="Accesorios Europeos">
+                    </div>
+                    <button class="btn-comprar-boceto" onclick="abrirPasarela('Accesorios Europeos')">COMPRAR</button>
+                </div>
+
+            </section>
+
+            <section class="bloque-catalogo-lado">
+                
+                <div class="tarjeta-producto-catalogo">
+                    <div class="pestana-categorias-boceto"><span>ACCESORIOS AFRICANOS</span></div>
+                    <div class="imagen-catalogo-cuadro">
+                        <img src="accesorios africanos.jpg" alt="Accesorios Africanos">
+                    </div>
+                    <button class="btn-comprar-boceto" onclick="abrirPasarela('Accesorios Africanos')">COMPRAR</button>
+                </div>
+
+                <div class="tarjeta-producto-catalogo">
+                    <div class="pestana-categorias-boceto"><span>ACCESORIOS OCEANÍA</span></div>
+                    <div class="imagen-catalogo-cuadro">
+                        <img src="accesorios oceania.jpg" alt="Accesorios Oceanía">
+                    </div>
+                    <button class="btn-comprar-boceto" onclick="abrirPasarela('Accesorios Oceanía')">COMPRAR</button>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <div id="modal-pasarela" class="ventana-modal-pago">
+        <div class="contenido-modal-pago">
+            <span class="cerrar-modal" onclick="cerrarPasarela()">&times;</span>
+            <h3 id="modal-titulo-producto">MÉTODO DE PAGO</h3>
+            <p>Selecciona cómo deseas realizar tu compra segura en ZYRA FASHION:</p>
+            
+            <div class="opciones-pago-lista">
+                <div class="opcion-item-pago" onclick="confirmarPago('Tarjeta de Crédito')">
+                    <i>💳</i> <span>Tarjeta de Crédito</span>
+                </div>
+                <div class="opcion-item-pago" onclick="confirmarPago('Tarjeta de Débito')">
+                    <i>🏦</i> <span>Tarjeta de Débito</span>
+                </div>
+                <div class="opcion-item-pago" onclick="confirmarPago('Transferencia SPEI / Débito')">
+                    <i>📱</i> <span>Transferencia / SPEI</span>
+                </div>
+                <div class="opcion-item-pago" onclick="confirmarPago('Efectivo en Tiendas de Conveniencia')">
+                    <i>💵</i> <span>Efectivo (OXXO / Tiendas)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-tallas" class="ventana-modal-pago">
+        <div class="contenido-modal-pago">
+            <span class="cerrar-modal" onclick="cerrarTallas()">&times;</span>
+            <h3>GUÍA DE TALLAS GLOBAL - ZYRA</h3>
+            <p>Usa esta tabla de referencia para asegurar el calce ideal de tus prendas y accesorios:</p>
+            <table class="tabla-tallas-estilo">
+                <thead>
+                    <tr>
+                        <th>Continente</th>
+                        <th>Chica (S)</th>
+                        <th>Mediana (M)</th>
+                        <th>Grande (L)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>América / Europa</td>
+                        <td>Talla 4-6</td>
+                        <td>Talla 8-10</td>
+                        <td>Talla 12-14</td>
+                    </tr>
+                    <tr>
+                        <td>Asia</td>
+                        <td>Talla 2-4</td>
+                        <td>Talla 6-8</td>
+                        <td>Talla 10-12</td>
+                    </tr>
+                    <tr>
+                        <td>África / Oceanía</td>
+                        <td>Ajustable</td>
+                        <td>Estándar</td>
+                        <td>Plus</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function abrirPasarela(nombreProducto) {
+            document.getElementById('modal-titulo-producto').innerText = "COMPRAR: " + nombreProducto;
+            document.getElementById('modal-pasarela').style.display = 'flex';
+        }
+        function cerrarPasarela() {
+            document.getElementById('modal-pasarela').style.display = 'none';
+        }
+        function abrirTallas() {
+            document.getElementById('modal-tallas').style.display = 'flex';
+        }
+        function cerrarTallas() {
+            document.getElementById('modal-tallas').style.display = 'none';
+        }
+        function confirmarPago(metodo) {
+            alert("¡Procesando orden con " + metodo + "!\nGracias por elegir ZYRA FASHION. Tu solicitud está en camino.");
+            cerrarPasarela();
+        }
+        // Cerrar al dar clic afuera
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('modal-pasarela')) cerrarPasarela();
+            if (event.target == document.getElementById('modal-tallas')) cerrarTallas();
+        }
+    </script>
+
+</body>
+</html>
